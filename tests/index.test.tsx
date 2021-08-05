@@ -9,8 +9,6 @@ describe('App', () => {
     });
 
     render();
-    expect(
-      screen.getByRole('heading', {name: 'Welcome to Next.js!'}),
-    ).toBeInTheDocument();
+    expect(screen.getByText('Hello, world.')).toBeInTheDocument();
   });
 });
