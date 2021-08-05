@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Dependencies are locked with a `yarn.lock` file, so please use `yarn` and not `npm` for installing them.
+
+## eft-collab-maps (Escape From Tarkov Collaborative Maps)
+
+A web app built with NextJS and Pusher to point out locations and plan routes in real time with a squad in Escape From Tarkov. Simply enter a room number and share the resulting URL with your friends, when you draw, add shapes, or type on the screen, your team members should be able to see it too.
+
 ## Getting Started
 
 First, run the development server:
@@ -32,10 +38,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-# eft-collab-maps
-
-A web app built with NextJS and Pusher to point out locations and plan routes in real time with a squad in Escape From Tarkov
 
 ## License
 
