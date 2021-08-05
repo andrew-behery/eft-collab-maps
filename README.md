@@ -36,3 +36,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # eft-collab-maps
 
 A web app built with NextJS and Pusher to point out locals and plan routes in real time with squad in Escape From Tarkov
+
+## License
+
+This project doesn't have an open source license and is protected by copyright law, you may view and fork this project, but are not allowed to use it for commerical use.
