@@ -1,22 +1,18 @@
-name: Test
+name: Tests
 on: [push]
-
 jobs:
-  test:
-    name: Test
+  cypress-run:
     runs-on: ubuntu-16.04
     steps:
       - name: Checkout
-      - uses: actions/checkout@v2
-
+        uses: actions/checkout@v1
       - name: Start App
         run: |
           yarn
           NODE_ENV=test yarn build
           NODE_ENV=test yarn start &
-
       - name: Unit Tests
-        run: yarn test --watchAll=false
-
-      - name: Cypress run
+        run: |
+          yarn test --watchAll=false
+      - name: E2E Tests
         uses: cypress-io/github-action@v2
