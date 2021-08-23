@@ -9,6 +9,9 @@ describe('App', () => {
     });
 
     render();
-    expect(screen.getByText('Hello, world.')).toBeInTheDocument();
+  });
+
+  it('renders the SketchField', () => {
+    expect(screen.getByTestId('SketchfieldTestId')).toBeInTheDocument();
   });
 });
