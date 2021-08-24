@@ -1,6 +1,6 @@
-import {screen} from '@testing-library/react';
+import {screen, render} from '@testing-library/react';
 import {getPage} from 'next-page-tester';
-import App from '../pages/index';
+import Home from '../pages/index';
 
 describe('App', () => {
   it('renders without crashing', async () => {
@@ -10,5 +10,11 @@ describe('App', () => {
 
     render();
     expect(screen.getByText('Hello, world.')).toBeInTheDocument();
+  });
+
+  it('renders a <ReactSketchCanvas />', () => {
+    const component = render(<Home />);
+    const findCanvas = component.getByTestId('canvasId').firstChild;
+    expect(findCanvas).toBeInTheDocument();
   });
 });

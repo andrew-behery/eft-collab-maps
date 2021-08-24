@@ -5,7 +5,7 @@ describe('Smoke Test', () => {
     cy.visit('/');
   });
 
-  it('renders the SketchField', () => {
-    cy.get('SketchField');
+  it('renders the ReactSketchCanvas', () => {
+    cy.get('[data-testid=canvasId]').children();
   });
 });

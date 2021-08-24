@@ -10,14 +10,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       Hello, world.
-      <ReactSketchCanvas
-        data-testid="Canvas"
-        //style={styles}
-        width="600"
-        height="400"
-        strokeWidth={4}
-        strokeColor="red"
-      />
+      <div data-testid="canvasId">
+        <ReactSketchCanvas
+          //style={styles}
+          width="600"
+          height="400"
+          strokeWidth={4}
+          strokeColor="red"
+        />
+      </div>
     </div>
   );
 }
