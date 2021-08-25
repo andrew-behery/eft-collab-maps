@@ -9,7 +9,6 @@ describe('App', () => {
     });
 
     render();
-    expect(screen.getByText('Hello, world.')).toBeInTheDocument();
   });
 
   it('renders a <ReactSketchCanvas />', () => {

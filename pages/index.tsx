@@ -4,19 +4,18 @@ import {ReactSketchCanvas} from 'react-sketch-canvas';
 
 export default function Home() {
   return (
-    <div>
+    <div className="border-4 border-indigo-600 h-screen">
       <Head>
         <title>Tarkov Collaberative Maps</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      Hello, world.
-      <div data-testid="canvasId">
+      <div data-testid="canvasId" className="h-full">
         <ReactSketchCanvas
           //style={styles}
-          width="600"
-          height="400"
+          //width="100rem"
+          //height="100rem"
           strokeWidth={4}
-          strokeColor="red"
+          strokeColor="black"
         />
       </div>
     </div>
